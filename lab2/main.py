@@ -62,7 +62,7 @@ def not_movement_chord(a, b):
     while True:
         x2 = x1 - (f(x1) * (x1 - x0) / (f(x1) - f(x0)))
         print(f"x_{n} = {x2}")
-        if abs(x2 - x1) < eps:
+        if abs(x2 - x1) < f(x1):
             break
         x1 = x2
         n += 1
